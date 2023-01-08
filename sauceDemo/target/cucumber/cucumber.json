@@ -1,0 +1,200 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9806003042,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "user can be check out",
+        "description": "",
+        "id": "feature-check-out;user-can-be-check-out",
+        "after": [
+          {
+            "result": {
+              "duration": 20459,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 457892208,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User open the website sauce demo",
+            "match": {
+              "location": "LoginSteps.verifyDisplay()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3278366041,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User input \"standard_user\" as userName and input \"secret_sauce\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 12
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginSteps.inputCredential(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 863168584,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User select \"Name (Z to A)\" to Filter Product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Name (Z to A)",
+                  "offset": 13
+                }
+              ],
+              "location": "PurchaseSteps.filterProduct(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5316457125,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User pick item Sauce Labs Onesie and T-shirt Red",
+            "match": {
+              "location": "PurchaseSteps.clickItemBasket1()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5109895000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click cart button",
+            "match": {
+              "location": "PurchaseSteps.clickcartIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5083529500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User remove item T-shirt Red on Cart Page",
+            "match": {
+              "location": "PurchaseSteps.clickremoveicon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5100117500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User click Check Out Button on Cart Page",
+            "match": {
+              "location": "PurchaseSteps.klikCO()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 968391833,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User input \"Nesa\" as userName, input \"Andestra\" as password and \"13740\" as postal code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nesa",
+                  "offset": 12
+                },
+                {
+                  "val": "Andestra",
+                  "offset": 38
+                },
+                {
+                  "val": "13740",
+                  "offset": 65
+                }
+              ],
+              "location": "PurchaseSteps.inputInfromation(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5266051250,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User click Continue Button",
+            "match": {
+              "location": "PurchaseSteps.klikContinue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92980208,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click Finish Button",
+            "match": {
+              "location": "PurchaseSteps.klikFinish()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Feature check out",
+    "description": "",
+    "id": "feature-check-out",
+    "keyword": "Feature",
+    "uri": "features/CheckOut.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@CheckOut"
+      }
+    ]
+  }
+]
